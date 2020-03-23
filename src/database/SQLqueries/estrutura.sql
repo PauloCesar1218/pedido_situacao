@@ -1,8 +1,13 @@
 CREATE DATABASE pj;
 USE pj;
+CREATE TABLE situacao(
+id INT PRIMARY KEY AUTO_INCREMENT,
+descricao VARCHAR(100) NOT NULL
+);
 CREATE TABLE pedido(
 id INT PRIMARY KEY AUTO_INCREMENT,
 descricao VARCHAR(100) NOT NULL,
 quatidade INT NOT NULL,
 id_situacao INT NOT NULL,
+FOREIGN KEY (id_situacao) REFERENCES situacao(id)
 );

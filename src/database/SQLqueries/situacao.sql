@@ -1,8 +1,0 @@
-CREATE DATABASE pj;
-USE pj;
-CREATE TABLE pedido(
-id INT PRIMARY KEY AUTO_INCREMENT,
-descricao VARCHAR(100) NOT NULL,
-quatidade INT NOT NULL,
-id_situacao INT NOT NULL,
-);
