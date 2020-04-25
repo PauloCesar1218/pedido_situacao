@@ -5,7 +5,7 @@ class Connection {
         host: 'localhost',
         user: 'root',
         password: '',
-        database: 'pj',
+        database: 'pedrotoledo',
     });
 
     public connectDatabase(): mysql.Connection {
